@@ -1,0 +1,137 @@
+*,  *:before, *:after{
+    box-sizing: border-box;
+    margin: 0;
+  }
+  html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffefd;
+    color:#170000;
+}
+body{
+  &.noscroll{
+    overflow: hidden;
+  }
+}
+img{
+    width: 100%;
+}
+button{
+  border: none;
+  background: none;
+}
+expenses-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9.6rem;
+}
+.food-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.6rem;
+}
+#app{
+  display: grid;
+  position: relative;
+  grid-template-columns: auto 90vw auto;
+  grid-template-rows: 6rem auto 6.5rem;
+}
+.welcome-title--mark{
+  color: $primary-color;
+}
+.main-bg--color{
+  background-color: black;
+}
+.heading-1{
+  font-size: 9.6rem;
+  font-weight: 400;
+}
+.heading-2{
+  font-size: 3.6rem;
+  @extend .bold
+}
+.heading-3{
+  font-size:3.2rem;
+  @extend .bold
+}
+.heading-4{
+  font-size: 2.4rem;
+  @extend .bold
+}
+.heading-5{
+  font-size: 2.1rem;
+  @extend .bold
+}
+.bold{
+  font-weight: 700;
+}
+.body{
+  font-size: 1.8rem;
+  @extend .bold;
+  font-family: 'Poppins', sans-serif;
+}
+.text{
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+}
+.text-bold{
+  font-size: 1.6rem;
+  @extend .bold
+}
+.text-s{
+  font-size: 1.2rem;
+  @extend .text;
+}
+.bold{
+  font-weight: 700;
+}
+.margin-s{
+  margin-bottom: 8px;
+}
+.margin{
+  margin-bottom: 16px;
+}
+.margin-xl{
+  margin-bottom: 64px;
+}
+.margin-xxl{
+  margin-bottom: 128px;
+}
+.margin-l{
+  margin-bottom: 32px;
+}
+.btn-cta{
+  width: 220px;
+  padding: 16px 0;
+  background-color: $primary-color;
+  color: white;
+  border-radius: 25px;
+  animation: background-color .3s ease-in-out, font-weight .3s ease-in-out;
+  @extend .body;
+
+  &:hover{
+    background-color: $primary-color-dark;
+    transition: box-shadow .3s ease-in-out, background-color .3s ease-in-out, font-weight .3s ease-in-out;
+  }
+}
+.btn{
+  width: 220px;
+  padding: 16px 0;
+  color: $primary-color;
+  border-radius: 8px;
+  border: 1px solid $primary-color;
+  text-align: center;
+  @extend .body;
+
+  animation: background-color .3s ease-in-out, font-weight .3s ease-in-out;
+}
