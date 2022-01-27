@@ -96,26 +96,26 @@ expenses-container{
   font-weight: 700;
 }
 .margin-s{
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
 }
 .margin{
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 .margin-xl{
-  margin-bottom: 64px;
+  margin-bottom: 6.4rem;
 }
 .margin-xxl{
-  margin-bottom: 128px;
+  margin-bottom: 12.8rem;
 }
 .margin-l{
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 .btn-cta{
-  width: 220px;
-  padding: 16px 0;
+  width: 22rem;
+  padding: 1.6rem 0;
   background-color: $primary-color;
   color: white;
-  border-radius: 25px;
+  border-radius: 2.5rem;
   animation: background-color .3s ease-in-out, font-weight .3s ease-in-out;
   @extend .body;
 
@@ -125,11 +125,11 @@ expenses-container{
   }
 }
 .btn{
-  width: 220px;
-  padding: 16px 0;
+  width: 22rem;
+  padding: 1.6rem 0;
   color: $primary-color;
-  border-radius: 8px;
-  border: 1px solid $primary-color;
+  border-radius: 0.8rem;
+  border: 0.1rem solid $primary-color;
   text-align: center;
   @extend .body;
 

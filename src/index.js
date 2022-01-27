@@ -1,6 +1,6 @@
 import './styles/styles.scss'
 import './components/start-section.js'
-import { items } from './Items';
+import './components/header-section.js'
 
 const appContainer = document.getElementById('app')
 
@@ -14,6 +14,7 @@ export const start = () => {
 export const startApp = () => {
     appContainer.innerHTML = '';
     const header = document.createElement('header-section')
+    header.className = 'header'
     const menu = document.createElement('menu-section')
     appContainer.append(header, menu)
 }
