@@ -1,0 +1,49 @@
+.menu{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: 10;
+    footer{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        height: 6.5rem;
+        background-color: hsla(0, 0, 98, 1);
+    }
+    &-option{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $gray40;
+        &:hover{
+            background-color: hsla(0, 0, 100, 1);
+        }
+        i{
+            color: $gray20;
+            font-size: 2rem;
+            margin-bottom: 0.4rem;
+        }
+    }
+
+    &-option--active{
+        color: $primary-color;
+        font-weight: 700;
+        i{
+            color: $primary-color;
+        }
+    }
+
+}
+
+.menu-user{
+    background-color: white;
+    &__logout{
+        width: 22rem;
+        height: 4rem;
+        font-weight: 300;
+        color: $primary-color;
+    }
+}
