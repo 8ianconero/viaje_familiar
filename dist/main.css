@@ -1,0 +1,288 @@
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/styles.scss ***!
+  \*****************************************************************************************************************/
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  background-color: #fffefd;
+  color: #170000;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+expenses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 9.6rem;
+}
+
+.food-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.6rem;
+}
+
+#app {
+  display: grid;
+  position: relative;
+  grid-template-columns: auto 90vw auto;
+  grid-template-rows: 6rem auto 6.5rem;
+}
+
+.welcome-title--mark {
+  color: #ff4747;
+}
+
+.main-bg--color {
+  background-color: black;
+}
+
+.heading-1 {
+  font-size: 9.6rem;
+  font-weight: 400;
+}
+
+.heading-2 {
+  font-size: 3.6rem;
+}
+
+.heading-3 {
+  font-size: 3.2rem;
+}
+
+.heading-4 {
+  font-size: 2.4rem;
+}
+
+.heading-5 {
+  font-size: 2.1rem;
+}
+
+.bold, .text-bold, .body, .btn, .header-logout--active .header-logout__btn, .btn-cta, .heading-2, .heading-3, .heading-4, .heading-5 {
+  font-weight: 700;
+}
+
+.body, .btn, .header-logout--active .header-logout__btn, .btn-cta {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.text, .text-s {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-bold {
+  font-size: 1.6rem;
+}
+
+.text-s {
+  font-size: 1.2rem;
+}
+
+.bold, .heading-2, .heading-3, .heading-4, .heading-5, .body, .btn, .header-logout--active .header-logout__btn, .btn-cta, .text-bold {
+  font-weight: 700;
+}
+
+.margin-s {
+  margin-bottom: 0.8rem;
+}
+
+.margin {
+  margin-bottom: 1.6rem;
+}
+
+.margin-xl {
+  margin-bottom: 6.4rem;
+}
+
+.margin-xxl {
+  margin-bottom: 12.8rem;
+}
+
+.margin-l {
+  margin-bottom: 3.2rem;
+}
+
+.btn-cta {
+  width: 22rem;
+  padding: 1.6rem 0;
+  background-color: #ff4747;
+  color: white;
+  border-radius: 2.5rem;
+  animation: background-color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+.btn-cta:hover {
+  background-color: #cc0000;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.btn, .header-logout--active .header-logout__btn {
+  width: 22rem;
+  padding: 1.6rem 0;
+  color: #ff4747;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #ff4747;
+  text-align: center;
+  animation: background-color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.start {
+  grid-column: 1/4;
+  grid-row: 1/4;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-bg {
+  position: absolute;
+}
+.start-bg img {
+  object-fit: cover;
+  min-height: 100vh;
+  height: 100%;
+}
+.start-content {
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+.start-content__title {
+  font-size: 9.6rem;
+  color: white;
+}
+.start-content__btn {
+  width: 220px;
+}
+
+.header {
+  grid-column: 2/3;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  width: 100%;
+  max-height: 6rem;
+}
+.header-nav {
+  display: flex;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.header-nav__btn {
+  height: 2.4rem;
+  width: 2.4rem;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-nav__btn i {
+  font-size: 2.4rem;
+  color: #ff4747;
+}
+.header-logout {
+  display: none;
+}
+
+.header-logout--active {
+  position: absolute;
+  z-index: 999;
+  width: 27rem;
+  top: 6rem;
+  padding: 1.6rem;
+  right: 0;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 16px 10px rgba(204, 0, 0, 0.04);
+  background-color: white;
+}
+.menu {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: 10;
+}
+.menu footer {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  height: 6.5rem;
+  background-color: #fafafa;
+}
+.menu-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+}
+.menu-option:hover {
+  background-color: white;
+}
+.menu-option i {
+  color: #cccccc;
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+.menu-option--active {
+  color: #ff4747;
+  font-weight: 700;
+}
+.menu-option--active i {
+  color: #ff4747;
+}
+
+.menu-user {
+  background-color: white;
+}
+.menu-user__logout {
+  width: 22rem;
+  height: 4rem;
+  font-weight: 300;
+  color: #ff4747;
+}

@@ -1,3 +1,5 @@
+import { appContainer, contentApp } from "..";
+
 class menuSection extends HTMLElement{
     constructor(){
         super()
@@ -42,6 +44,7 @@ class menuSection extends HTMLElement{
         if(!remove){
             const option = this.querySelector('#menu-home')
             option.classList.add('menu-option--active')
+            contentApp()
         }
     }
     home(){
@@ -49,28 +52,28 @@ class menuSection extends HTMLElement{
         const remove = this.querySelector('.menu-option--active')
         remove.classList.remove('menu-option--active')
         option.classList.add('menu-option--active')
-        //homeContent('home')
+        contentApp('home')
     }
     expenses(){
         const option = this.querySelector('#menu-expenses')
         const remove = this.querySelector('.menu-option--active')
         remove.classList.remove('menu-option--active')
         option.classList.add('menu-option--active')
-        //homeContent('expenses')
+        contentApp('expenses')
     }
     travel(){
         const option = this.querySelector('#menu-travel')
         const remove = this.querySelector('.menu-option--active')
         remove.classList.remove('menu-option--active')
         option.classList.add('menu-option--active')
-        //homeContent('travel')
+        contentApp('travel')
     }
     rtj(){
         const option = this.querySelector('#menu-rtj')
         const remove = this.querySelector('.menu-option--active')
         remove.classList.remove('menu-option--active')
         option.classList.add('menu-option--active')
-        //homeContent('rtj')
+        contentApp('rtj')
     }
 }
 
