@@ -78,7 +78,7 @@ export const expensesContent = (a) => {
             break;
         
         case 'Hospedaje-option':
-            const lodgings = items.filter(item => item.type === 'atracciones')
+            const lodgings = items.filter(item => item.type === 'hospedaje')
         const lodgingsList = lodgings.map(item => {
             return `
             <expenses-card 

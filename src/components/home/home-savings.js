@@ -50,22 +50,22 @@ class homeSavings extends HTMLElement{
     }
     getSavingsForExpenses(){
         if(this.expenses > 0){
-            if(this.flight.length === 0){
+            if(!this.flight[0]){
                 const resultado = Math.ceil((this.expenses - this.savings)/this.travelDateMonth)
                 this.savingsForExpenses = resultado
                 return this.savingsForExpenses
-            }else if(this.flight.length > 0 && this.savings < this.flight[0].precio){
+            }else if(this.flight.length > 0 && this.savings < this.flight[0].price){
                 if(this.savings === 0){
-                    const resultado = Math.ceil((this.expenses - this.flight[0].precio)/this.travelDateMonth)
+                    const resultado = Math.ceil((this.expenses - this.flight[0].price)/this.travelDateMonth)
                     this.savingsForExpenses = resultado
                     return this.savingsForExpenses
                 }else{
-                    const resultado = Math.ceil((this.expenses - this.flight[0].precio)/this.travelDateMonth)
+                    const resultado = Math.ceil((this.expenses - this.flight[0].price)/this.travelDateMonth)
                     this.savingsForExpenses = resultado
                     return this.savingsForExpenses
                 }
-            }else if(this.flight.length > 0 && this.savings >= this.flight[0].precio){
-                const resultado = Math.ceil(((this.expenses - this.flight[0].precio)-(this.savings-this.flight[0]))/this.travelDateMonth)
+            }else if(this.flight.length > 0 && this.savings >= this.flight[0].price){
+                const resultado = Math.ceil(((this.expenses - this.flight[0].price)-(this.savings-this.flight[0]))/this.travelDateMonth)
                 this.savingsForExpenses = resultado
                 return this.savingsForExpenses
             }

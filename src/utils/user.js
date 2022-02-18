@@ -19,6 +19,7 @@ export const user = {
         let data = this.getData()
         data.ahorros = p;
         this.saveUser(data)
+        this.updateProgress()
     },
     updateExpenses(){
         let data = this.getData()
@@ -30,15 +31,29 @@ export const user = {
         let total = allPrices.reduce((a,b)=> a+b, 0)
         data.gastos = total
         this.saveUser(data)
+        this.updateProgress()
     },
     addExpenses(p){
         let data = this.getData()
         data.misGastos.push(p)
         this.saveUser(data)
+        this.updateProgress()
     },
-    updateProgress(p){
+    updateProgress(){
         let data = this.getData()
-        data.progreso = p;
+        const gastos = data.gastos
+        const ahorro = data.ahorros
+
+        if( gastos > 0 && ahorro > 0){
+            let porcentage = ((ahorro*100)/gastos)
+            let porcentageFixed = porcentage.toFixed(2)
+            data.progreso = porcentageFixed
+            this.saveUser(data)
+        }else{
+            data.progreso = 0
+            this.saveUser(data)
+        }
+        
         this.saveUser(data)
     },
     updateRank(p){

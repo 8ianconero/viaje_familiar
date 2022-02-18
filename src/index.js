@@ -18,6 +18,10 @@ import './components/travel/travel-header.js'
 import './components/travel/travel-dates.js'
 import './components/travel/travel-cities.js'
 
+//header
+import './components/rtj/rtj-header.js'
+import './components/rtj/rtj-content.js'
+
 //btn
 import './components/botones/btn-cart.js'
 import './components/botones/btn-add.js'
@@ -50,7 +54,7 @@ export const contentApp = (a) => {
         case 'rtj':
             content.innerHTML = ''
             const rtjHeader = document.createElement('rtj-header')
-            const rtjContainer = document.createElement('rtj-container')
+            const rtjContainer = document.createElement('rtj-content')
             content.append(rtjHeader, rtjContainer)
             break;
         default:
