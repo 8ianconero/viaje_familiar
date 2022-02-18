@@ -13,6 +13,11 @@ import './components/expenses/expenses-header.js'
 import './components/expenses/expenses-nav.js'
 import './components/expenses/expenses-section.js'
 
+//travel
+import './components/travel/travel-header.js'
+import './components/travel/travel-dates.js'
+import './components/travel/travel-cities.js'
+
 //btn
 import './components/botones/btn-cart.js'
 import './components/botones/btn-add.js'
@@ -39,9 +44,8 @@ export const contentApp = (a) => {
             const travelHeader = document.createElement('travel-header')
             const travelDates = document.createElement('travel-dates')
             const travelCities = document.createElement('travel-cities')
-            const travelItinerary = document.createElement('travel-itinerary')
 
-            content.append(travelHeader, travelDates, travelCities,travelItinerary)
+            content.append(travelHeader, travelDates, travelCities)
             break;
         case 'rtj':
             content.innerHTML = ''
