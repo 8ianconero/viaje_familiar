@@ -1,9 +1,10 @@
-import { countdownTravel } from "../../utils/countdown";
+import { countdownTravel, timeRemaining } from "../../utils/countdown";
 
 class homeCountdown extends HTMLElement{
     constructor(){
         super()
-        this.countdown = countdownTravel()
+        this.travelCountdown = countdownTravel()
+        this.countdown = timeRemaining(this.travelCountdown)
     }
     getTemplate(){
         const template = document.createElement('template')

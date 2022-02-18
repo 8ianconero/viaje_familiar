@@ -1,5 +1,5 @@
 import { startApp } from "..";
-import { user } from "../utils/data";
+import { user } from "../utils/user";
 
 class startSection extends HTMLElement{
     constructor(){
@@ -30,20 +30,12 @@ class startSection extends HTMLElement{
         this.render()
     }
     startForm(){
-        const data = localStorage.getItem('user')
-        if(data){
+        let userExist = user.getData()
+        if(userExist){
             startApp()
         }else{
-            const user = {
-                ahorros: 0,
-                gastos: 0,
-                misGastos: [],
-                nombre: 'Invitado',
-                progreso:0,
-                rank:0,
-            }
-            localStorage.setItem('user', JSON.stringify(user))
-            startApp()
+            user.createUser()
+            this.startForm()
         }
     }
 }

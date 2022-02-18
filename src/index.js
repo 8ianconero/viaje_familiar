@@ -8,7 +8,18 @@ import './components/home/home-greet.js'
 import './components/home/home-countdown.js'
 import './components/home/home-stats.js'
 import './components/home/home-savings.js'
+//expenses
+import './components/expenses/expenses-header.js'
+import './components/expenses/expenses-nav.js'
+import './components/expenses/expenses-section.js'
 
+//btn
+import './components/botones/btn-cart.js'
+import './components/botones/btn-add.js'
+import './components/botones/btn-qty.js'
+import './components/botones/btn-value.js'
+import './components/botones/btn-remove.js'
+import { user } from './utils/user'
 
 export const appContainer = document.getElementById('app')
 
@@ -19,7 +30,7 @@ export const contentApp = (a) => {
             content.innerHTML = ''
             const expensesHeader = document.createElement('expenses-header')
             const expensesNav = document.createElement('expenses-nav')
-            const expensesContainer = document.createElement('expenses-container')
+            const expensesContainer = document.createElement('expenses-section')
 
             content.append(expensesHeader, expensesNav, expensesContainer)
             break;
@@ -49,7 +60,7 @@ export const contentApp = (a) => {
     }
 }
 
-export const startApp = () => {
+export function startApp(){
     appContainer.innerHTML = '';
     const header = document.createElement('header-section')
     header.className = 'header'

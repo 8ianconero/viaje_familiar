@@ -19,6 +19,7 @@ img{
 button{
   border: none;
   background: none;
+  font-family: 'Poppins', sans-serif;
 }
 expenses-container{
   display: flex;
@@ -88,6 +89,10 @@ expenses-container{
   font-size: 1.6rem;
   @extend .bold
 }
+.text-m{
+  font-size: 1.4rem;
+  @extend .text;
+}
 .text-s{
   font-size: 1.2rem;
   @extend .text;
@@ -137,4 +142,39 @@ expenses-container{
   @extend .body;
 
   animation: background-color .3s ease-in-out, font-weight .3s ease-in-out;
+}
+content-app{
+  grid-column: 2/3;
+  width: 100%;
+}
+
+
+.item-add__btn{
+  height: 4rem;
+  width: 7rem;
+  border-radius: 0.8rem;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  text-align: center;
+  padding: 0;
+  @extend .text-s, .bold;
+}
+.item-add__btn:disabled{
+  color: $gray20;
+  border: 1px solid $gray20;
+}
+.item-qty{
+  width: 7.5rem;
+  height: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  border: 1px solid $gray20;
+  border-radius: 2.5rem;
+  justify-content: space-around;
+  align-items: center;
+  font-size:1.2rem;
+  &__btn{
+    color: $primary-color;
+    font-weight:700;
+  }
 }

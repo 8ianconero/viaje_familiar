@@ -1,11 +1,13 @@
-import { user } from "../../utils/data";
+import { user } from "../../utils/user";
+
 class homeStats extends HTMLElement{
     constructor(){
         super()
-        this.gastos = user.gastos
-        this.ahorros = user.ahorros
-        this.progreso = user.progreso
-        this.rank = user.rank
+        this.user = user.getData()
+        this.gastos = this.user.gastos
+        this.ahorros = this.user.ahorros
+        this.progreso = this.user.progreso
+        this.rank = this.user.rank
     }
     getTemplate(){
         const template = document.createElement('template')

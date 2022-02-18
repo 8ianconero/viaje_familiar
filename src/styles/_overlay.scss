@@ -1,0 +1,95 @@
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    grid-column: 1 / -1;
+    position: absolute;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding: 0;
+    top:0;
+
+    .overlay-container{
+        background-color: white;
+        width: 90vw;
+        padding: 32px 0;
+        height: 80vh;
+        box-shadow: $shadow-red;
+        border-radius: 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            font-size: 3.2rem;
+            font-weight: 700;
+        }
+        .overlay-cart{
+            display: flex;
+            flex-wrap: wrap;
+            overflow-y: auto;
+            justify-content: center;
+            align-content: flex-start;
+            gap: 16px;
+            height: 90%;
+            width: 100%;
+            padding: 1.6rem;
+        }
+        .overlay-btn{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: black;
+            z-index: 111;
+            position: absolute;
+            top: 0;
+            right: 0;
+            span{
+                background-color: white;
+                display: block;
+                width: 20px;
+                height: 4px;
+                
+                &:first-child{
+                    transform:  translate(-1px, 2px) rotate(45deg);
+                }
+                &:nth-child(2){
+                    transform:  translate(-1px, -2px) rotate(-45deg);
+                }
+            }
+        }
+    }
+    .cart-card{
+        width: 300px;
+        box-shadow: $shadow-red;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-content: center;
+        justify-content: center;
+        border-radius: 14px;
+        gap: 8px;
+        padding: 16px;
+        .card-info{
+            .card-info__qty{
+                color: $gray20;
+            }
+        }
+        .card-btns{
+            .card-btn__remove{
+                height: 40px;
+                width: 70px;
+                border-radius: 8px;
+                border: 1px solid $primary-color;
+                color: $primary-color;
+                text-align: center;
+                padding: 0;
+                font-family: "Poppins", sans-serif;
+            }
+        }
+    }
+}
+.active{
+    display: flex;
+}

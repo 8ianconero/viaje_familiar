@@ -1,25 +1,24 @@
-import { user } from "../../utils/user";
-
-
-class homeGreet extends HTMLElement{
+class expensesHeader extends HTMLElement{
     constructor(){
         super()
-        this.user = user.getData()
-        this.name = this.user.nombre
     }
     getTemplate(){
         const template = document.createElement('template')
         template.innerHTML = `
-        <h2 class="heading-2 margin-l">Bienvenido(a) <span class="greet-name">${this.name}</span></h2>
+        <div class="expenses-header">
+            <h3 class="heading-3">Gastos</h3>
+            <btn-cart></btn-cart
+        </div>
         `;
         return template
     }
     render(){
         this.appendChild(this.getTemplate().content.cloneNode(true))
+        
     }
     connectedCallback(){
         this.render()
     }
 }
 
-customElements.define('home-greet', homeGreet)
+customElements.define('expenses-header', expensesHeader)
