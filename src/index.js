@@ -28,7 +28,7 @@ import './components/botones/btn-add.js'
 import './components/botones/btn-qty.js'
 import './components/botones/btn-value.js'
 import './components/botones/btn-remove.js'
-import { user } from './utils/user'
+
 
 export const appContainer = document.getElementById('app')
 

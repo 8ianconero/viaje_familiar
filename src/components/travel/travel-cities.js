@@ -12,13 +12,13 @@ class travelCities extends HTMLElement{
             ref: "https://www.google.com/travel/things-to-do?dest_mid=%2Fm%2F0dqyw&dest_state_type=main&dest_src=yts&authuser=1&tcfs=EhEKCC9tLzBkcXl3EgVPc2FrYQ#ttdm=34.664780_135.477460_12", 
             ciudad: "Osaka"},
             {src:"https://images.pexels.com/photos/2389157/pexels-photo-2389157.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-            ref: "",
+            ref: "https://www.google.com/travel/things-to-do?dest_mid=%2Fm%2F0kstw&dest_state_type=main&dest_src=yts&authuser=1&tcfs=EhQKCC9tLzBrc3R3EghZb2tvaGFtYQ",
             ciudad:"Yokohama"},
             {src:"https://images.pexels.com/photos/5720170/pexels-photo-5720170.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-            ref: "",
+            ref: "https://www.google.com/travel/things-to-do?dest_mid=%2Fm%2F0gqfy&dest_state_type=main&dest_src=yts&authuser=1&tcfs=EhIKCC9tLzBncWZ5EgZOYWdveWE",
             ciudad:"Nagoya"},
             {src:"https://images.pexels.com/photos/460738/pexels-photo-460738.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-            ref: "",
+            ref: "https://www.google.com/travel/things-to-do?dest_mid=%2Fm%2F0g3bc&dest_state_type=main&dest_src=yts&authuser=1&tcfs=EhEKCC9tLzBnM2JjEgVLxY1iZQ",
             ciudad:"Kobe"},
         ]
     }
